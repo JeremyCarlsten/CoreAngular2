@@ -3,7 +3,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { GenderPipe } from './gender.pipe';
-import { HttpModule } from '@angular/http';
 
 describe('App: Project', () => {
   beforeEach(() => {
@@ -11,9 +10,6 @@ describe('App: Project', () => {
       declarations: [
         AppComponent,
         GenderPipe
-      ],
-      imports: [
-        HttpModule
       ]
     });
   });
