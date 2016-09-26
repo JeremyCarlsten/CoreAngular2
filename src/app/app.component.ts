@@ -7,13 +7,14 @@ import 'rxjs/Rx'; // For methods for Observables
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  server = 'https://angular-jeremycarlsten.c9users.io:8081';
+  server = 'http://localhost:8081';
   people = [];
 
   constructor(private https: Http) {
   }
 
-  checkSearch(term) {
+
+  checkSearch(term: string) {
     if (term.length < 2) {
       this.people = [];
     } else {

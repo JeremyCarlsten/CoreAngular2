@@ -40,8 +40,8 @@
                 {{i+1}}. {{person?.first}} {{person.last}}
             </td>
             <td class="SSN">{{person.ssn}}</td>
-            <td class="DOB">{{person.birthDate}}</td>
-            <td class="gender">{{person.gender}}</td>
+            <td class="DOB">{{person.birthDate | date: 'shortDate'}}</td>
+            <td class="gender">{{person.gender | gender }}</td>
           </tr>
           </tbody>
         </table>
